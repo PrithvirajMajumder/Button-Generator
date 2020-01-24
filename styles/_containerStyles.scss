@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+}
+.interactive-container{
+    text-align: center;
+    background-color: $secondaryColor;
+    color: $textColor;
+    padding: 20px;
+    margin: 30px 30px;
+    border-radius: $radius;
+}
+.button-categories{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.get-code-container {
+    padding-top: 20px;
+    #get-code{
+        background-color: $accentColor;
+        color: $textColor;
+        padding: 10px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        border-radius: $radius;
+        border: none;
+    }
+}
+
+h3{
+    padding: 10px 0;
+    border-top: thin solid $textColor;
+    border-bottom: solid thin $textColor;
+}
+label{
+    margin-bottom: 10px;
+}
+input[type=number]
+{
+    background-color: $textColor;
+    padding: 5px;
+    border-radius: $radius;
+    text-align: center;
+}
+
+input[type=text]
+{
+    background-color: $textColor;
+    padding: 5px;
+    border-radius: $radius;
+    text-align: center;
+    border: solid $textColor;
+}
+
+input[type=color]
+{
+    margin: auto;
+}
