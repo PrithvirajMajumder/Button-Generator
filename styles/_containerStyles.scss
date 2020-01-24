@@ -14,9 +14,9 @@
     flex-direction: column;
     padding: 8px;
 }
-.get-code-container {
+.export-button-wrapper {
     padding-top: 20px;
-    #get-code{
+    button{
         background-color: $accentColor;
         color: $textColor;
         padding: 10px;

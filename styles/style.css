@@ -36,11 +36,11 @@
   padding: 8px;
 }
 
-.get-code-container {
+.export-button-wrapper {
   padding-top: 20px;
 }
 
-.get-code-container #get-code {
+.export-button-wrapper button {
   background-color: #7fcd91;
   color: #f5eaea;
   padding: 10px;
@@ -80,13 +80,36 @@ input[type=color] {
   margin: auto;
 }
 
-button {
-  margin: 0 auto;
+.output-container {
+  top: 30%;
+  position: absolute;
+  text-align: center;
+}
+
+.outlook-container {
+  margin-left: 10rem;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#output-button {
+  border: none;
+}
+
+.output-wrapper {
+  overflow: auto;
+  text-align: center;
+  display: inline-block;
+  padding: 0 50rem;
+  top: 30%;
+  position: absolute;
+}
+
+.hidden {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -60,19 +60,23 @@
                     <input type="number" value="0" id="border-radius">
                 </div>
 
-            <div class="get-code-container">
-                <div class="export-button-wrapper">
+                <div class="get-code-container">
+                    <div class="export-button-wrapper">
                     <button id="export-button">Get Code!</button>
+                    </div>
                 </div>
-            </div>
-            </div>
+                </div>
         </div>
-
-        <div class="output-container">
-            <button id="output-button">Click Me</button>
+        <div class="outlook-container">
+            <div class="output-container">
+                <h3>Button Outlook</h3>
+                <button id="output-button">Click Me</button>
         </div>
-
-        <div id="code-container"></div>
+        </div>
+        <div class="output-wrapper hidden">
+            <h3>Button</h3>
+            <code id="code-container"></code>
+        </div>
     </div>
 
     <script>
@@ -136,10 +140,11 @@
         });
 
         $('#export-button').click(function () {
-            var $buttonMarkup = $('.output-container').html();           
+            var $buttonMarkup = $('.output-container').html();
             $('#code-container').text($buttonMarkup);
+            $('.output-wrapper').removeClass('hidden');
         });
-        
+
         function renderStyles() {
             $('#output-button').css({
                 "width": buttonStyles.width,

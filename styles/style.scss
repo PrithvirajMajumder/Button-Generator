@@ -8,3 +8,18 @@ body{
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#output-button{
+    border: none;
+}
+.output-wrapper {
+    overflow: auto;
+    text-align: center;
+    display: inline-block;
+    padding: 0 50rem;
+    top: 30%;
+    position: absolute;
+}
+
+.hidden {
+    display: none !important;
+}
