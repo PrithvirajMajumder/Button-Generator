@@ -24,7 +24,7 @@
 
                 <div class="button-categories">
                     <label for="text-size">Text Size</label>
-                    <input type="number" value="14" id="text-size">
+                    <input type="range" min="0" max="40" id="text-size">
                 </div>
 
                 <div class="button-categories">
@@ -43,12 +43,12 @@
 
                 <div class="button-categories">
                     <label for="button-height">Height</label>
-                    <input type="number" value="100" id="button-height">
+                    <input type="range" min="0" max="40" id="button-height">
                 </div>
 
                 <div class="button-categories">
                     <label for="button-width">Width</label>
-                    <input type="number" value="100" id="button-width">
+                    <input type="range" min="0" max="40" id="button-width">
                 </div>
 
             </div>
@@ -57,7 +57,7 @@
 
                 <div class="button-categories">
                     <label for="border-radius">Radius</label>
-                    <input type="number" value="0" id="border-radius">
+                    <input type="range" min="0" max="40" id="border-radius">
                 </div>
 
             <div class="get-code-container">
@@ -93,7 +93,7 @@
             $('#output-button').text(inputValue);
         });
 
-        $('#text-size').keyup(function () {
+        $('#text-size').change(function () {
             var inputValue = $(this).val();
             buttonStyles.fontSize = inputValue + 'px';
             renderStyles();
@@ -111,25 +111,25 @@
             renderStyles();
         });
 
-        $('#button-height').keyup(function () {
+        $('#button-height').change(function () {
             var inputValue = $(this).val();
             buttonStyles.height = inputValue + 'px';
             renderStyles();
         });          
 
-        $('#button-width').keyup(function () {
+        $('#button-width').change(function () {
             var inputValue = $(this).val();
             buttonStyles.width = inputValue + 'px';
             renderStyles();
         });
 
-        $('#border-radius').keyup(function () {
+        $('#border-radius').change(function () {
             var inputValue = $(this).val();
             buttonStyles.borderRadius = inputValue + 'px';
             renderStyles();
         });
 
-        $('#border-width').keyup(function () {
+        $('#border-width').change(function () {
             var inputValue = $(this).val();
             buttonStyles.borderSize = inputValue + 'px';
             renderStyles();
